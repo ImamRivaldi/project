@@ -21,6 +21,26 @@ int main(){
 		cout<<"=============================== \n";
 		cout<<"Masukkan Pilihan : ";
 		cin>>pilihan;
+		switch(pilihan){
+			case 1:
+				system("cls");
+				float berat;
+				int tinggi;
+				cout<<"Masukkan Tinggi Badan (cm)	: ";
+				cin>>tinggi;
+				cout<<"Masukkan Beran Badan (kg)	: ";
+				cin>>berat;
+				if(berat<tinggi/2.5){
+					cout<<"Hasil	: Kurus"<<endl;
+				}
+				else if(tinggi/2.5<=berat&&berat<=tinggi/2.3){
+					cout<<"Hasil	: Normal"<<endl;
+				}
+				else if(tinggi/2.3<berat){
+					cout<<"Hasil	: Gemuk"<<endl;
+				}
+				break;
+		}
 	}
 	
 	while(pilih=='Y'||pilih=='y');
