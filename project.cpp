@@ -65,6 +65,18 @@ int main(){
 					cout<<"Hasil = 0 (Nilai Mutlak)";
 				}
 				break;
+			case 3:
+				system("cls");
+				int nilai;
+				cout<<"Masukkan Nilai	: ";
+				cin>>nilai;
+				if(nilai>0)
+				cout<<"Nilai Positif";
+				else if(nilai<0)
+				cout<<"Nilai Negatif";
+				else
+				cout<<"Nilai 0";
+				break;
 		}
 	}
 	
