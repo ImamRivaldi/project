@@ -143,6 +143,9 @@ int main(){
 				goto ulang;
 				break;
 		}
+		cout<<"\n\n Apakah Anda Ingin Melanjutkan Proses Lain?(Y/T) : ";
+		cin>>pilih;
+		cout<<" \n";
 	}
 	
 	while(pilih=='Y'||pilih=='y');
