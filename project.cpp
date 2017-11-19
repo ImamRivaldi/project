@@ -8,6 +8,13 @@ using namespace std;
 int main(){
 	int pilihan;
 	char pilih;
+	int LuasRumah;
+	
+	double LuasParket = 193*1215;
+	
+	double Box = LuasParket*8/1000000;
+	
+	double JumlahBox, Parket, Pasang, Total;
 	ulang:
 	do {
 		system("cls");
@@ -109,13 +116,6 @@ int main(){
 				break;
 			case 5:
 				system("cls");
-				int LuasRumah;
-	
-				double LuasParket = 193*1215;
-				
-				double Box = LuasParket*8/1000000;
-				
-				double JumlahBox, Parket, Pasang, Total;
 				cout<<"Luas Rumah        :  ";
 				cin>>LuasRumah;
 				cout<<"-------------------------------- \n";
@@ -133,7 +133,14 @@ int main(){
 				cout<<"Biaya Pasang(Rp)  : " <<Pasang<<endl;
 				
 				Total = Parket + Pasang;
-				cout<<"Total Biaya(Rp)   : " <<Total<<endl;
+				cout<<"Total Biaya(Rp)   : " <<Total<<endl;	
+				break;
+				
+			default :
+				cout<<"Anda Salah Pilih Proses";
+				cout<<" \n";
+				getch();
+				goto ulang;
 				break;
 		}
 	}
