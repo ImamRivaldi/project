@@ -77,6 +77,36 @@ int main(){
 				else
 				cout<<"Nilai 0";
 				break;
+			case 4:
+				system("cls");
+				char bidang;
+				double panjang,luas,alas,Tinggi,lebar;
+				
+				cout<<"Pilih Jenis Bidang (P/S): ";
+				cin >> bidang;
+				
+				if(bidang=='P'||bidang=='p'){
+					cout<<"+++++Menghitung Luas Persegi Panjang+++++\n";
+					cout<<"Masukkan Panjang	: ";
+					cin>>panjang;
+					cout<<"Masukkan Lebar		: ";
+					cin>>lebar;
+					luas=panjang*lebar;
+					cout<<"Hasil			: "<<luas<<endl;
+				}
+				else if(bidang=='S'||bidang=='s'){
+					cout<<"+++++Menghitung Luas Segitiga+++++\n";
+					cout<<"Masukkan Alas	: ";
+					cin>>alas;
+					cout<<"Masukkan Tinggi	: ";
+					cin>>Tinggi;
+					luas=0.5*alas*Tinggi;
+					cout<<"Hasil		: "<<luas<<endl;
+				}
+				else{
+					cout<<"Harap Pilih Jenis Bidang yang Benar!!!";
+				}
+				break;
 		}
 	}
 	
